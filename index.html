@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL 2022 Project</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section start -->
+    <header>
+      <div id="head-container">
+        <div id="head-right">
+          <img
+            src="https://static.india.com/wp-content/uploads/2020/08/IPL-Logo.jpg"
+            alt="logo here"
+            id="logo"
+          />
+          <a href="index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+
+
+          <div class="dropdown"
+        id="add-team-button">
+          <button onclick="myFunction()" class="dropbtn">Teams</button>
+          <div id="myDropdown" class="dropdown-content" >
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=MI" name="GT"  >Mumbai Indians</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=CSK">Chennai Super Kings</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=RCB">Royal Challengers Bangolre</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=KKR">Kolkata Night Riders</a>
+            <a href="#https://ipl-2022-project.glitch.me/teams_details.html?name=DC">Delhi Capitalst</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=GT">Gujarat Titans</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=RR">Rajastan Royals</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=SH">Sunrises Hyderabad</a>
+<!--             <a href="#contact">Lucknow Super Gaints</a> -->
+          </div>
+        </div>
+        </div>
+
+
+
+        <div id="head-left">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Search Teams" />
+            <div class="autocom-box"></div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Create Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            Add Player
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section end -->
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide">
+          <img src="https://cdn.glitch.global/3d01b093-713d-4833-b466-a9bb76ffcf94/thumbnails%2Fimage1.webp?1670262475064" alt="" />
+        </div>
+        <div class="slide first">
+          <img src="https://cdn.glitch.global/3d01b093-713d-4833-b466-a9bb76ffcf94/thumbnails%2Fimage2.png?1670262486113"alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/3d01b093-713d-4833-b466-a9bb76ffcf94/thumbnails%2Fimage3.png?1670262492284" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/3d01b093-713d-4833-b466-a9bb76ffcf94/thumbnails%2Fimg4.png?1670262496408" alt="" />
+        </div>
+
+        <div class="navigation-auto" >
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <h1 id="slogan">IPL Team 2022</h1>
+    <div id="first-main">
+      <div id="container_teams"></div>
+    </div>
+    <footer class="foot-sty">
+      <div><h4>IPL 2022</h4></div>
+      <div><h4><a href="index.html">Home</a></h4></div>
+      <div><h4><a href="#Teams">Teams</a></h4></div>
+    </footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
