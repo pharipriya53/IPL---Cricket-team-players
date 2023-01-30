@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teams Details</title>
+    <link rel="stylessheet" href="/styles.css" />
+    <script type="text/JavaScript" src="script.js"></script>
+      crossorigin="anonymous"
+  
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="head-con3">
+        <div id="head-right">
+          <div>
+
+          <img
+            src="https://cdn.storyasset.link/rDoQLC7Q6Ge2nxiqZ1urXiiRSIA3/tata-ipl-logo-indya-talks-sanket-savaliya-removebg-preview-ms-qeladdzjmt.png"
+            alt="logo here"
+            id="logo"
+          />
+        </div>
+          <a href="/index.html">
+			  <button id="home-button" class="add-button">Home</button></a>
+           <div class="dropdown"
+        id="add-team-button">
+          <button onclick="myFunction()" class="dropbtn">Teams</button>
+          <div id="myDropdown" class="dropdown-content" >
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=MI" name="GT"  >Mumbai Indians</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=CSK">Chennai Super Kings</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=RCB">Royal Challengers Bangolre</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=KKR">Kolkata Night Riders</a>
+            <a href="#https://ipl-2022-project.glitch.me/teams_details.html?name=DC">Delhi Capitalst</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=GT">Gujarat Titans</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=RR">Rajastan Royals</a>
+            <a href="https://ipl-2022-project.glitch.me/teams_details.html?name=SH">Sunrises Hyderabad</a>
+<!--             <a href="#contact">Lucknow Super Gaints</a> -->
+          </div>
+
+
+          <button id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()">
+
+            Add Player
+          </button>
+
+        </div>
+		  </div></div>
+    </header>
+    <h1 id="slogan3">Team Details</h1>
+    <div id="table-team"></div>
+
+    <div id="first-main">
+      <div id="container_teams" class="team-class"></div>
+    </div>
+    <footer class="foot-sty">
+      <div><h4>IPL 2022</h4></div>
+      <div><h4><a href="index.html">Home</a></h4></div>
+      <div><h4><a href="#Teams">Teams</a></h4></div>
+    </footer>
+
+    <script src="/team_details.js"></script>
+    <!-- <script src="./addPlayer.js"></script> -->
+  </body>
+</html>
